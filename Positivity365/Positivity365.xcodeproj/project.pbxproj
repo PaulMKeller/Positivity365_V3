@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA18AC441E3719F50078E009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC431E3719F50078E009 /* AppDelegate.swift */; };
+		DA18AC491E3719F60078E009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA18AC471E3719F60078E009 /* Main.storyboard */; };
+		DA18AC4C1E3719F60078E009 /* Positivity365.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC4A1E3719F60078E009 /* Positivity365.xcdatamodeld */; };
+		DA18AC4E1E3719F60078E009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA18AC4D1E3719F60078E009 /* Assets.xcassets */; };
+		DA18AC511E3719F60078E009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA18AC4F1E3719F60078E009 /* LaunchScreen.storyboard */; };
+		DA18AC5C1E3719F60078E009 /* Positivity365Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC5B1E3719F60078E009 /* Positivity365Tests.swift */; };
+		DA18AC671E3719F60078E009 /* Positivity365UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC661E3719F60078E009 /* Positivity365UITests.swift */; };
+		DA18AC751E371F5C0078E009 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC741E371F5C0078E009 /* DataController.swift */; };
+		DA18AC7E1E3725CB0078E009 /* Year+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC761E3725CB0078E009 /* Year+CoreDataClass.swift */; };
+		DA18AC7F1E3725CB0078E009 /* Year+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC771E3725CB0078E009 /* Year+CoreDataProperties.swift */; };
+		DA18AC801E3725CB0078E009 /* Month+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC781E3725CB0078E009 /* Month+CoreDataClass.swift */; };
+		DA18AC811E3725CB0078E009 /* Month+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC791E3725CB0078E009 /* Month+CoreDataProperties.swift */; };
+		DA18AC821E3725CB0078E009 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC7A1E3725CB0078E009 /* Day+CoreDataClass.swift */; };
+		DA18AC831E3725CB0078E009 /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC7B1E3725CB0078E009 /* Day+CoreDataProperties.swift */; };
+		DA18AC841E3725CB0078E009 /* PositiveNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC7C1E3725CB0078E009 /* PositiveNote+CoreDataClass.swift */; };
+		DA18AC851E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC7D1E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift */; };
+		DA18AC881E3727110078E009 /* InitialiseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC871E3727110078E009 /* InitialiseData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA18AC581E3719F60078E009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA18AC381E3719F40078E009 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA18AC3F1E3719F40078E009;
+			remoteInfo = Positivity365;
+		};
+		DA18AC631E3719F60078E009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA18AC381E3719F40078E009 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA18AC3F1E3719F40078E009;
+			remoteInfo = Positivity365;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA18AC401E3719F50078E009 /* Positivity365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positivity365.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA18AC431E3719F50078E009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA18AC481E3719F60078E009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA18AC4B1E3719F60078E009 /* Positivity365.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Positivity365.xcdatamodel; sourceTree = "<group>"; };
+		DA18AC4D1E3719F60078E009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA18AC501E3719F60078E009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA18AC521E3719F60078E009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA18AC571E3719F60078E009 /* Positivity365Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Positivity365Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA18AC5B1E3719F60078E009 /* Positivity365Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Positivity365Tests.swift; sourceTree = "<group>"; };
+		DA18AC5D1E3719F60078E009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA18AC621E3719F60078E009 /* Positivity365UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Positivity365UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA18AC661E3719F60078E009 /* Positivity365UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Positivity365UITests.swift; sourceTree = "<group>"; };
+		DA18AC681E3719F60078E009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA18AC741E371F5C0078E009 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		DA18AC761E3725CB0078E009 /* Year+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Year+CoreDataClass.swift"; path = "Positivity365/Year+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DA18AC771E3725CB0078E009 /* Year+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Year+CoreDataProperties.swift"; path = "Positivity365/Year+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DA18AC781E3725CB0078E009 /* Month+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Month+CoreDataClass.swift"; path = "Positivity365/Month+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DA18AC791E3725CB0078E009 /* Month+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Month+CoreDataProperties.swift"; path = "Positivity365/Month+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DA18AC7A1E3725CB0078E009 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day+CoreDataClass.swift"; path = "Positivity365/Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DA18AC7B1E3725CB0078E009 /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Day+CoreDataProperties.swift"; path = "Positivity365/Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DA18AC7C1E3725CB0078E009 /* PositiveNote+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PositiveNote+CoreDataClass.swift"; path = "Positivity365/PositiveNote+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DA18AC7D1E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PositiveNote+CoreDataProperties.swift"; path = "Positivity365/PositiveNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DA18AC871E3727110078E009 /* InitialiseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialiseData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA18AC3D1E3719F40078E009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA18AC541E3719F60078E009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA18AC5F1E3719F60078E009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA18AC371E3719F40078E009 = {
+			isa = PBXGroup;
+			children = (
+				DA18AC421E3719F50078E009 /* Positivity365 */,
+				DA18AC5A1E3719F60078E009 /* Positivity365Tests */,
+				DA18AC651E3719F60078E009 /* Positivity365UITests */,
+				DA18AC411E3719F50078E009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA18AC411E3719F50078E009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA18AC401E3719F50078E009 /* Positivity365.app */,
+				DA18AC571E3719F60078E009 /* Positivity365Tests.xctest */,
+				DA18AC621E3719F60078E009 /* Positivity365UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA18AC421E3719F50078E009 /* Positivity365 */ = {
+			isa = PBXGroup;
+			children = (
+				DA18AC861E3726280078E009 /* Models */,
+				DA18AC431E3719F50078E009 /* AppDelegate.swift */,
+				DA18AC471E3719F60078E009 /* Main.storyboard */,
+				DA18AC4D1E3719F60078E009 /* Assets.xcassets */,
+				DA18AC4F1E3719F60078E009 /* LaunchScreen.storyboard */,
+				DA18AC521E3719F60078E009 /* Info.plist */,
+				DA18AC4A1E3719F60078E009 /* Positivity365.xcdatamodeld */,
+				DA18AC741E371F5C0078E009 /* DataController.swift */,
+				DA18AC871E3727110078E009 /* InitialiseData.swift */,
+			);
+			path = Positivity365;
+			sourceTree = "<group>";
+		};
+		DA18AC5A1E3719F60078E009 /* Positivity365Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA18AC5B1E3719F60078E009 /* Positivity365Tests.swift */,
+				DA18AC5D1E3719F60078E009 /* Info.plist */,
+			);
+			path = Positivity365Tests;
+			sourceTree = "<group>";
+		};
+		DA18AC651E3719F60078E009 /* Positivity365UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA18AC661E3719F60078E009 /* Positivity365UITests.swift */,
+				DA18AC681E3719F60078E009 /* Info.plist */,
+			);
+			path = Positivity365UITests;
+			sourceTree = "<group>";
+		};
+		DA18AC861E3726280078E009 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA18AC761E3725CB0078E009 /* Year+CoreDataClass.swift */,
+				DA18AC771E3725CB0078E009 /* Year+CoreDataProperties.swift */,
+				DA18AC781E3725CB0078E009 /* Month+CoreDataClass.swift */,
+				DA18AC791E3725CB0078E009 /* Month+CoreDataProperties.swift */,
+				DA18AC7A1E3725CB0078E009 /* Day+CoreDataClass.swift */,
+				DA18AC7B1E3725CB0078E009 /* Day+CoreDataProperties.swift */,
+				DA18AC7C1E3725CB0078E009 /* PositiveNote+CoreDataClass.swift */,
+				DA18AC7D1E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA18AC3F1E3719F40078E009 /* Positivity365 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA18AC6B1E3719F60078E009 /* Build configuration list for PBXNativeTarget "Positivity365" */;
+			buildPhases = (
+				DA18AC3C1E3719F40078E009 /* Sources */,
+				DA18AC3D1E3719F40078E009 /* Frameworks */,
+				DA18AC3E1E3719F40078E009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Positivity365;
+			productName = Positivity365;
+			productReference = DA18AC401E3719F50078E009 /* Positivity365.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA18AC561E3719F60078E009 /* Positivity365Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA18AC6E1E3719F60078E009 /* Build configuration list for PBXNativeTarget "Positivity365Tests" */;
+			buildPhases = (
+				DA18AC531E3719F60078E009 /* Sources */,
+				DA18AC541E3719F60078E009 /* Frameworks */,
+				DA18AC551E3719F60078E009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA18AC591E3719F60078E009 /* PBXTargetDependency */,
+			);
+			name = Positivity365Tests;
+			productName = Positivity365Tests;
+			productReference = DA18AC571E3719F60078E009 /* Positivity365Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA18AC611E3719F60078E009 /* Positivity365UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA18AC711E3719F60078E009 /* Build configuration list for PBXNativeTarget "Positivity365UITests" */;
+			buildPhases = (
+				DA18AC5E1E3719F60078E009 /* Sources */,
+				DA18AC5F1E3719F60078E009 /* Frameworks */,
+				DA18AC601E3719F60078E009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA18AC641E3719F60078E009 /* PBXTargetDependency */,
+			);
+			name = Positivity365UITests;
+			productName = Positivity365UITests;
+			productReference = DA18AC621E3719F60078E009 /* Positivity365UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA18AC381E3719F40078E009 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Paul Keller";
+				TargetAttributes = {
+					DA18AC3F1E3719F40078E009 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6CGSY8527L;
+						ProvisioningStyle = Automatic;
+					};
+					DA18AC561E3719F60078E009 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6CGSY8527L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA18AC3F1E3719F40078E009;
+					};
+					DA18AC611E3719F60078E009 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6CGSY8527L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA18AC3F1E3719F40078E009;
+					};
+				};
+			};
+			buildConfigurationList = DA18AC3B1E3719F40078E009 /* Build configuration list for PBXProject "Positivity365" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA18AC371E3719F40078E009;
+			productRefGroup = DA18AC411E3719F50078E009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA18AC3F1E3719F40078E009 /* Positivity365 */,
+				DA18AC561E3719F60078E009 /* Positivity365Tests */,
+				DA18AC611E3719F60078E009 /* Positivity365UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA18AC3E1E3719F40078E009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA18AC511E3719F60078E009 /* LaunchScreen.storyboard in Resources */,
+				DA18AC4E1E3719F60078E009 /* Assets.xcassets in Resources */,
+				DA18AC491E3719F60078E009 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA18AC551E3719F60078E009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA18AC601E3719F60078E009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA18AC3C1E3719F40078E009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA18AC7E1E3725CB0078E009 /* Year+CoreDataClass.swift in Sources */,
+				DA18AC441E3719F50078E009 /* AppDelegate.swift in Sources */,
+				DA18AC811E3725CB0078E009 /* Month+CoreDataProperties.swift in Sources */,
+				DA18AC851E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift in Sources */,
+				DA18AC881E3727110078E009 /* InitialiseData.swift in Sources */,
+				DA18AC7F1E3725CB0078E009 /* Year+CoreDataProperties.swift in Sources */,
+				DA18AC821E3725CB0078E009 /* Day+CoreDataClass.swift in Sources */,
+				DA18AC831E3725CB0078E009 /* Day+CoreDataProperties.swift in Sources */,
+				DA18AC841E3725CB0078E009 /* PositiveNote+CoreDataClass.swift in Sources */,
+				DA18AC751E371F5C0078E009 /* DataController.swift in Sources */,
+				DA18AC801E3725CB0078E009 /* Month+CoreDataClass.swift in Sources */,
+				DA18AC4C1E3719F60078E009 /* Positivity365.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA18AC531E3719F60078E009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA18AC5C1E3719F60078E009 /* Positivity365Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA18AC5E1E3719F60078E009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA18AC671E3719F60078E009 /* Positivity365UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA18AC591E3719F60078E009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA18AC3F1E3719F40078E009 /* Positivity365 */;
+			targetProxy = DA18AC581E3719F60078E009 /* PBXContainerItemProxy */;
+		};
+		DA18AC641E3719F60078E009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA18AC3F1E3719F40078E009 /* Positivity365 */;
+			targetProxy = DA18AC631E3719F60078E009 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA18AC471E3719F60078E009 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA18AC481E3719F60078E009 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA18AC4F1E3719F60078E009 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA18AC501E3719F60078E009 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA18AC691E3719F60078E009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA18AC6A1E3719F60078E009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA18AC6C1E3719F60078E009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6CGSY8527L;
+				INFOPLIST_FILE = Positivity365/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PlanetKGames.Positivity365;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DA18AC6D1E3719F60078E009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6CGSY8527L;
+				INFOPLIST_FILE = Positivity365/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PlanetKGames.Positivity365;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DA18AC6F1E3719F60078E009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6CGSY8527L;
+				INFOPLIST_FILE = Positivity365Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PlanetKGames.Positivity365Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Positivity365.app/Positivity365";
+			};
+			name = Debug;
+		};
+		DA18AC701E3719F60078E009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6CGSY8527L;
+				INFOPLIST_FILE = Positivity365Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PlanetKGames.Positivity365Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Positivity365.app/Positivity365";
+			};
+			name = Release;
+		};
+		DA18AC721E3719F60078E009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6CGSY8527L;
+				INFOPLIST_FILE = Positivity365UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PlanetKGames.Positivity365UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Positivity365;
+			};
+			name = Debug;
+		};
+		DA18AC731E3719F60078E009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 6CGSY8527L;
+				INFOPLIST_FILE = Positivity365UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PlanetKGames.Positivity365UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Positivity365;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA18AC3B1E3719F40078E009 /* Build configuration list for PBXProject "Positivity365" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA18AC691E3719F60078E009 /* Debug */,
+				DA18AC6A1E3719F60078E009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA18AC6B1E3719F60078E009 /* Build configuration list for PBXNativeTarget "Positivity365" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA18AC6C1E3719F60078E009 /* Debug */,
+				DA18AC6D1E3719F60078E009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA18AC6E1E3719F60078E009 /* Build configuration list for PBXNativeTarget "Positivity365Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA18AC6F1E3719F60078E009 /* Debug */,
+				DA18AC701E3719F60078E009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA18AC711E3719F60078E009 /* Build configuration list for PBXNativeTarget "Positivity365UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA18AC721E3719F60078E009 /* Debug */,
+				DA18AC731E3719F60078E009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA18AC4A1E3719F60078E009 /* Positivity365.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA18AC4B1E3719F60078E009 /* Positivity365.xcdatamodel */,
+			);
+			currentVersion = DA18AC4B1E3719F60078E009 /* Positivity365.xcdatamodel */;
+			path = Positivity365.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA18AC381E3719F40078E009 /* Project object */;
+}

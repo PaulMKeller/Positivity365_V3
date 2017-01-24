@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Day" representedClassName="Day" syncable="YES">
+        <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Month" representedClassName="Month" syncable="YES">
+        <attribute name="maxDay" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="monthGroup" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PositiveNote" representedClassName="PositiveNote" syncable="YES">
+        <attribute name="noteDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteMonth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteYear" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" syncable="YES"/>
+        <relationship name="month" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Month" syncable="YES"/>
+        <relationship name="year" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Year" syncable="YES"/>
+    </entity>
+    <entity name="Year" representedClassName="Year" syncable="YES">
+        <attribute name="leapYear" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="yearGroup" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PositiveNote" positionX="-351" positionY="-207" width="128" height="148"/>
+        <element name="Year" positionX="-144" positionY="-9" width="128" height="73"/>
+        <element name="Month" positionX="-65" positionY="-120" width="128" height="73"/>
+        <element name="Day" positionX="-171" positionY="-258" width="128" height="58"/>
+    </elements>
+</model>

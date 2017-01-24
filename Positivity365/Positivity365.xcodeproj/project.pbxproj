@@ -24,6 +24,9 @@
 		DA18AC841E3725CB0078E009 /* PositiveNote+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC7C1E3725CB0078E009 /* PositiveNote+CoreDataClass.swift */; };
 		DA18AC851E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC7D1E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift */; };
 		DA18AC881E3727110078E009 /* InitialiseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC871E3727110078E009 /* InitialiseData.swift */; };
+		DA18AC8A1E3755E80078E009 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC891E3755E80078E009 /* MainTabBarViewController.swift */; };
+		DA18AC8C1E3756430078E009 /* PositivityNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC8B1E3756430078E009 /* PositivityNavigationViewController.swift */; };
+		DA18AC8E1E3756800078E009 /* PositivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC8D1E3756800078E009 /* PositivityTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		DA18AC7C1E3725CB0078E009 /* PositiveNote+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PositiveNote+CoreDataClass.swift"; path = "Positivity365/PositiveNote+CoreDataClass.swift"; sourceTree = "<group>"; };
 		DA18AC7D1E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PositiveNote+CoreDataProperties.swift"; path = "Positivity365/PositiveNote+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DA18AC871E3727110078E009 /* InitialiseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialiseData.swift; sourceTree = "<group>"; };
+		DA18AC891E3755E80078E009 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		DA18AC8B1E3756430078E009 /* PositivityNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositivityNavigationViewController.swift; sourceTree = "<group>"; };
+		DA18AC8D1E3756800078E009 /* PositivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositivityTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,9 @@
 				DA18AC4A1E3719F60078E009 /* Positivity365.xcdatamodeld */,
 				DA18AC741E371F5C0078E009 /* DataController.swift */,
 				DA18AC871E3727110078E009 /* InitialiseData.swift */,
+				DA18AC891E3755E80078E009 /* MainTabBarViewController.swift */,
+				DA18AC8B1E3756430078E009 /* PositivityNavigationViewController.swift */,
+				DA18AC8D1E3756800078E009 /* PositivityTableViewController.swift */,
 			);
 			path = Positivity365;
 			sourceTree = "<group>";
@@ -307,7 +316,10 @@
 				DA18AC851E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift in Sources */,
 				DA18AC881E3727110078E009 /* InitialiseData.swift in Sources */,
 				DA18AC7F1E3725CB0078E009 /* Year+CoreDataProperties.swift in Sources */,
+				DA18AC8C1E3756430078E009 /* PositivityNavigationViewController.swift in Sources */,
 				DA18AC821E3725CB0078E009 /* Day+CoreDataClass.swift in Sources */,
+				DA18AC8A1E3755E80078E009 /* MainTabBarViewController.swift in Sources */,
+				DA18AC8E1E3756800078E009 /* PositivityTableViewController.swift in Sources */,
 				DA18AC831E3725CB0078E009 /* Day+CoreDataProperties.swift in Sources */,
 				DA18AC841E3725CB0078E009 /* PositiveNote+CoreDataClass.swift in Sources */,
 				DA18AC751E371F5C0078E009 /* DataController.swift in Sources */,

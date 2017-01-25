@@ -14,6 +14,8 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        InitialiseData.checkForData()
     }
 
     override func didReceiveMemoryWarning() {

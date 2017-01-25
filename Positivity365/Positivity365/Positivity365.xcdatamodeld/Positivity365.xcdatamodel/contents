@@ -6,6 +6,7 @@
     <entity name="Month" representedClassName="Month" syncable="YES">
         <attribute name="maxDay" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="monthGroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="PositiveNote" representedClassName="PositiveNote" syncable="YES">
         <attribute name="noteDay" optional="YES" attributeType="String" syncable="YES"/>
@@ -21,9 +22,9 @@
         <attribute name="yearGroup" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Day" positionX="-171" positionY="-258" width="128" height="58"/>
+        <element name="Month" positionX="-65" positionY="-120" width="128" height="88"/>
         <element name="PositiveNote" positionX="-351" positionY="-207" width="128" height="148"/>
         <element name="Year" positionX="-144" positionY="-9" width="128" height="73"/>
-        <element name="Month" positionX="-65" positionY="-120" width="128" height="73"/>
-        <element name="Day" positionX="-171" positionY="-258" width="128" height="58"/>
     </elements>
 </model>

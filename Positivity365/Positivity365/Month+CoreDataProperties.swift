@@ -18,5 +18,6 @@ extension Month {
 
     @NSManaged public var monthGroup: String?
     @NSManaged public var maxDay: Int16
+    @NSManaged public var order: Int16
 
 }

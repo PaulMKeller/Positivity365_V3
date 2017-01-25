@@ -1,18 +1,18 @@
 //
-//  PositivityTableViewController.swift
+//  MonthsTableViewController.swift
 //  Positivity365
 //
-//  Created by Paul Keller on 24/1/17.
+//  Created by Paul Keller on 25/1/17.
 //  Copyright © 2017 Paul Keller. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class PositivityTableViewController: UITableViewController,  NSFetchedResultsControllerDelegate {
+class MonthsTableViewController: UITableViewController {
     
-    var years = [Year]()
-    
+    var months = [Month]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,18 +22,17 @@ class PositivityTableViewController: UITableViewController,  NSFetchedResultsCon
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let fetchRequest:NSFetchRequest<Year> = Year.fetchRequest()
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key:"yearGroup", ascending: true)]
+        let fetchRequest:NSFetchRequest<Month> = Month.fetchRequest()
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key:"order", ascending: true)]
         
         do {
             let searchResults = try DataController.getContext().fetch(fetchRequest)
             
-            years = searchResults
+            months = searchResults
             
         } catch {
             print("Error: \(error)")
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,18 +49,20 @@ class PositivityTableViewController: UITableViewController,  NSFetchedResultsCon
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return years.count
+        return months.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "YearGroupCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "monthCell", for: indexPath)
 
-        let year = years[indexPath.row]
-        cell.textLabel?.text = year.yearGroup
-        
+        // Configure the cell...
+        let month = months[indexPath.row]
+        cell.textLabel?.text = month.monthGroup
+
         return cell
     }
+    
 
     /*
     // Override to support conditional editing of the table view.

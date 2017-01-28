@@ -1,69 +1,68 @@
 //
-//  MonthsTableViewController.swift
+//  DaysTableViewController.swift
 //  Positivity365
 //
-//  Created by Paul Keller on 25/1/17.
+//  Created by Paul Keller on 28/01/2017.
 //  Copyright © 2017 Paul Keller. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class MonthsTableViewController: UITableViewController {
-    
-    var months = [Month]()
+class DaysTableViewController: UITableViewController {
 
+    var days = [Day]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let fetchRequest:NSFetchRequest<Month> = Month.fetchRequest()
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key:"order", ascending: true)]
+        let fetchRequest:NSFetchRequest<Day> = Day.fetchRequest()
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key:"day", ascending: true)]
         
         do {
             let searchResults = try DataController.getContext().fetch(fetchRequest)
             
-            months = searchResults
+            days = searchResults
             
         } catch {
             print("Error: \(error)")
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return months.count
+        return days.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "monthCell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dayCell", for: indexPath)
+        
         // Configure the cell...
-        let month = months[indexPath.row]
-        cell.textLabel?.text = month.monthGroup
-        cell.detailTextLabel?.text = String(month.maxDay)
+        let day = days[indexPath.row]
+        cell.textLabel?.text = String(day.day)
         
         return cell
     }
-    
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

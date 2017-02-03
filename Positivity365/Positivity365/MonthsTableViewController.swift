@@ -80,12 +80,13 @@ class MonthsTableViewController: UITableViewController {
             let myDaysTable = segue.destination as! DaysTableViewController
             let myPath: IndexPath = self.tableView.indexPathForSelectedRow!
             let selectedMonth = months[myPath.row]
+            myDaysTable.currentMaxDay = selectedMonth.maxDay
+            
             if isLeapYear == false {
                 if selectedMonth.monthGroup == "February" {
-                    selectedMonth.maxDay = selectedMonth.maxDay - 1
+                    myDaysTable.currentMaxDay = selectedMonth.maxDay - 1
                 }
             }
-            myDaysTable.currentMaxDay = selectedMonth.maxDay
         }
         
         //let path = self.tableView.indexPathForSelectedRow

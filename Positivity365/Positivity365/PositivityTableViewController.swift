@@ -12,7 +12,6 @@ import CoreData
 class PositivityTableViewController: UITableViewController,  NSFetchedResultsControllerDelegate {
     
     var years = [Year]()
-    var isLeapYear: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +69,7 @@ class PositivityTableViewController: UITableViewController,  NSFetchedResultsCon
             let myPath: IndexPath = self.tableView.indexPathForSelectedRow!
             let selectedYear = years[myPath.row]
             myMonthsTable.isLeapYear = selectedYear.leapYear
+            print("LeapYear: \(myMonthsTable.isLeapYear)")
         }
     }
 

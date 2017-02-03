@@ -12,6 +12,7 @@ import CoreData
 class PositivityTableViewController: UITableViewController,  NSFetchedResultsControllerDelegate {
     
     var years = [Year]()
+    var isLeapYear: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +62,15 @@ class PositivityTableViewController: UITableViewController,  NSFetchedResultsCon
         cell.textLabel?.text = year.yearGroup
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "monthsSegue" {
+            let myMonthsTable = segue.destination as! MonthsTableViewController
+            let myPath: IndexPath = self.tableView.indexPathForSelectedRow!
+            let selectedYear = years[myPath.row]
+            myMonthsTable.isLeapYear = selectedYear.leapYear
+        }
     }
 
     /*

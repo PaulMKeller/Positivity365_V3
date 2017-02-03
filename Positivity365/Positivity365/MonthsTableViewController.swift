@@ -12,7 +12,8 @@ import CoreData
 class MonthsTableViewController: UITableViewController {
     
     var months = [Month]()
-
+    var isLeapYear:Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -60,8 +61,38 @@ class MonthsTableViewController: UITableViewController {
         let month = months[indexPath.row]
         cell.textLabel?.text = month.monthGroup
         cell.detailTextLabel?.text = String(month.maxDay)
+        //monthCurrentMaxDay = month.maxDay
         
         return cell
+    }
+    
+    /*
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "monthCell", for: indexPath)
+        
+        monthCurrentMaxDay = Int16((cell.detailTextLabel?.text)!)!
+    }
+    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // get a reference to the second view controller
+        if segue.identifier == "daysSegue" {
+            let myDaysTable = segue.destination as! DaysTableViewController
+            let myPath: IndexPath = self.tableView.indexPathForSelectedRow!
+            let selectedMonth = months[myPath.row]
+            if isLeapYear == false {
+                if selectedMonth.monthGroup == "February" {
+                    selectedMonth.maxDay = selectedMonth.maxDay - 1
+                }
+            }
+            myDaysTable.currentMaxDay = selectedMonth.maxDay
+        }
+        
+        //let path = self.tableView.indexPathForSelectedRow
+        //let maxDay = self.items[path.row]
+        
+        // set a variable in the second view controller with the String to pass
+        
     }
     
     /*

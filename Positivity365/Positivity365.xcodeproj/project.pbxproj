@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0E6DF11E445F96009E41C2 /* ToDoList.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DF01E445F96009E41C2 /* ToDoList.rtf */; };
 		DA18AC441E3719F50078E009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC431E3719F50078E009 /* AppDelegate.swift */; };
 		DA18AC491E3719F60078E009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA18AC471E3719F60078E009 /* Main.storyboard */; };
 		DA18AC4C1E3719F60078E009 /* Positivity365.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC4A1E3719F60078E009 /* Positivity365.xcdatamodeld */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0E6DF01E445F96009E41C2 /* ToDoList.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ToDoList.rtf; sourceTree = "<group>"; };
 		DA18AC401E3719F50078E009 /* Positivity365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positivity365.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA18AC431E3719F50078E009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA18AC481E3719F60078E009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			children = (
 				DA18AC5B1E3719F60078E009 /* Positivity365Tests.swift */,
 				DA18AC5D1E3719F60078E009 /* Info.plist */,
+				DA0E6DF01E445F96009E41C2 /* ToDoList.rtf */,
 			);
 			path = Positivity365Tests;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0E6DF11E445F96009E41C2 /* ToDoList.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

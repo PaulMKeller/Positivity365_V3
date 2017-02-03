@@ -12,6 +12,7 @@ import CoreData
 class DaysTableViewController: UITableViewController {
 
     var days = [Day]()
+    var currentMaxDay:Int16 = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class DaysTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         let fetchRequest:NSFetchRequest<Day> = Day.fetchRequest()
+        fetchRequest.fetchLimit = Int(currentMaxDay)
         fetchRequest.sortDescriptors = [NSSortDescriptor(key:"day", ascending: true)]
         
         do {

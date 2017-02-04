@@ -69,6 +69,7 @@ class PositivityTableViewController: UITableViewController,  NSFetchedResultsCon
             let myPath: IndexPath = self.tableView.indexPathForSelectedRow!
             let selectedYear = years[myPath.row]
             myMonthsTable.isLeapYear = selectedYear.leapYear
+            myMonthsTable.currentYear = selectedYear.yearGroup
             print("LeapYear: \(myMonthsTable.isLeapYear)")
         }
     }

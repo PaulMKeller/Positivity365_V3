@@ -13,6 +13,7 @@ class MonthsTableViewController: UITableViewController {
     
     var months = [Month]()
     var isLeapYear:Bool = false
+    var currentYear:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +88,9 @@ class MonthsTableViewController: UITableViewController {
                     myDaysTable.currentMaxDay = selectedMonth.maxDay - 1
                 }
             }
+            
+            myDaysTable.currentMonth = selectedMonth.monthGroup
+            myDaysTable.currentYear = currentYear
         }
         
         //let path = self.tableView.indexPathForSelectedRow

@@ -6,10 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Positivity Table View Controller-->
+        <!--Years-->
         <scene sceneID="JRY-TQ-Z3x">
             <objects>
                 <tableViewController id="DTq-FL-aHp" customClass="PositivityTableViewController" customModule="Positivity365" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uTL-QI-F7Q" id="IPO-ob-gdw">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -35,16 +36,16 @@
                             <outlet property="delegate" destination="DTq-FL-aHp" id="MAc-k7-8dg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ohC-Ag-Aag"/>
+                    <navigationItem key="navigationItem" title="Years" id="ohC-Ag-Aag"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNr-Xj-YfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2082.4000000000001" y="99.400299850074973"/>
         </scene>
-        <!--Months Table View Controller-->
+        <!--Months-->
         <scene sceneID="K3I-pu-WMP">
             <objects>
-                <tableViewController id="5wG-9n-m07" customClass="MonthsTableViewController" customModule="Positivity365" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Months" id="5wG-9n-m07" customClass="MonthsTableViewController" customModule="Positivity365" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="akE-ci-MTf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,11 +55,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TfD-9d-s3z" id="Bbb-o2-1Zr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FtS-Go-Uws">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -79,12 +80,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXQ-gq-get" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3065" y="99"/>
+            <point key="canvasLocation" x="2834" y="99"/>
         </scene>
-        <!--Days Table View Controller-->
+        <!--Days-->
         <scene sceneID="3Nw-hg-cbM">
             <objects>
-                <tableViewController id="v9m-B1-b7s" customClass="DaysTableViewController" customModule="Positivity365" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Days" id="v9m-B1-b7s" customClass="DaysTableViewController" customModule="Positivity365" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yQ8-AS-DcV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,9 +95,12 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p3U-lK-xeV" id="Hgr-3c-9bU">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Ede-W1-G7c" kind="show" identifier="noteSegue" id="rkE-7f-9XS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -107,7 +111,62 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytt-9G-7TI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3850" y="99"/>
+            <point key="canvasLocation" x="3561" y="99"/>
+        </scene>
+        <!--Positive Note-->
+        <scene sceneID="uCD-xa-GWq">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucj-GS-zVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Positive Note" id="Ede-W1-G7c" customClass="NoteViewController" customModule="Positivity365" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jx0-fQ-AKg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ERK-ro-ayx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SyL-iU-V5O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="im3-Ke-C1r">
+                                <rect key="frame" x="0.0" y="64" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="507883188.97513902">
+                                    <!--2017-02-04 06:39:48 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="en_GB"/>
+                            </datePicker>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y2J-xo-kHr">
+                                <rect key="frame" x="16" y="269" width="343" height="337"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" hint="Enter your positive note here"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="done"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y2J-xo-kHr" firstAttribute="leading" secondItem="SyL-iU-V5O" secondAttribute="leadingMargin" id="ZXc-bV-3vq"/>
+                            <constraint firstItem="ERK-ro-ayx" firstAttribute="top" secondItem="Y2J-xo-kHr" secondAttribute="bottom" constant="17" id="a9a-80-W4W"/>
+                            <constraint firstItem="im3-Ke-C1r" firstAttribute="top" secondItem="Jx0-fQ-AKg" secondAttribute="bottom" id="ehT-sK-bFx"/>
+                            <constraint firstItem="im3-Ke-C1r" firstAttribute="centerX" secondItem="Y2J-xo-kHr" secondAttribute="centerX" id="hse-eC-CBZ"/>
+                            <constraint firstItem="im3-Ke-C1r" firstAttribute="leading" secondItem="SyL-iU-V5O" secondAttribute="leading" id="ijz-8A-wTe"/>
+                            <constraint firstItem="Y2J-xo-kHr" firstAttribute="top" secondItem="Jx0-fQ-AKg" secondAttribute="bottom" constant="205" id="xy0-YT-27V"/>
+                            <constraint firstAttribute="trailing" secondItem="im3-Ke-C1r" secondAttribute="trailing" id="z1A-VP-fQi"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Save" id="7Qo-Rh-l2h">
+                            <connections>
+                                <action selector="saveNote:" destination="Ede-W1-G7c" id="nvb-2F-YZa"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="noteDate" destination="im3-Ke-C1r" id="1MQ-YL-HfE"/>
+                        <outlet property="noteText" destination="Y2J-xo-kHr" id="XEY-td-92J"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4296.8000000000002" y="98.50074962518741"/>
         </scene>
         <!--Positivity-->
         <scene sceneID="wK2-pg-XaL">

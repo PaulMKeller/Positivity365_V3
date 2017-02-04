@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		DA0E6DF11E445F96009E41C2 /* ToDoList.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DF01E445F96009E41C2 /* ToDoList.rtf */; };
+		DA0E6DFD1E455718009E41C2 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DF31E455718009E41C2 /* Icon-60@2x.png */; };
+		DA0E6DFE1E455718009E41C2 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DF41E455718009E41C2 /* Icon-60@3x.png */; };
+		DA0E6DFF1E455718009E41C2 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DF51E455718009E41C2 /* Icon-76.png */; };
+		DA0E6E001E455718009E41C2 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DF61E455718009E41C2 /* Icon-76@2x.png */; };
+		DA0E6E011E455718009E41C2 /* Icon-76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DF71E455718009E41C2 /* Icon-76@3x.png */; };
+		DA0E6E021E455718009E41C2 /* Icon-83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DF81E455718009E41C2 /* Icon-83.5@2x.png */; };
+		DA0E6E031E455718009E41C2 /* Icon-Small-40.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DF91E455718009E41C2 /* Icon-Small-40.png */; };
+		DA0E6E041E455718009E41C2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DFA1E455718009E41C2 /* Icon.png */; };
+		DA0E6E051E455718009E41C2 /* IconBase.xcf in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DFB1E455718009E41C2 /* IconBase.xcf */; };
+		DA0E6E061E455718009E41C2 /* IconBaseCropped.xcf in Resources */ = {isa = PBXBuildFile; fileRef = DA0E6DFC1E455718009E41C2 /* IconBaseCropped.xcf */; };
+		DA1447CA1E45AE0A00BD282C /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1447C91E45AE0A00BD282C /* NoteViewController.swift */; };
 		DA18AC441E3719F50078E009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC431E3719F50078E009 /* AppDelegate.swift */; };
 		DA18AC491E3719F60078E009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA18AC471E3719F60078E009 /* Main.storyboard */; };
 		DA18AC4C1E3719F60078E009 /* Positivity365.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC4A1E3719F60078E009 /* Positivity365.xcdatamodeld */; };
@@ -51,6 +62,17 @@
 
 /* Begin PBXFileReference section */
 		DA0E6DF01E445F96009E41C2 /* ToDoList.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ToDoList.rtf; sourceTree = "<group>"; };
+		DA0E6DF31E455718009E41C2 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		DA0E6DF41E455718009E41C2 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		DA0E6DF51E455718009E41C2 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		DA0E6DF61E455718009E41C2 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		DA0E6DF71E455718009E41C2 /* Icon-76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@3x.png"; sourceTree = "<group>"; };
+		DA0E6DF81E455718009E41C2 /* Icon-83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-83.5@2x.png"; sourceTree = "<group>"; };
+		DA0E6DF91E455718009E41C2 /* Icon-Small-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40.png"; sourceTree = "<group>"; };
+		DA0E6DFA1E455718009E41C2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DA0E6DFB1E455718009E41C2 /* IconBase.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IconBase.xcf; sourceTree = "<group>"; };
+		DA0E6DFC1E455718009E41C2 /* IconBaseCropped.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IconBaseCropped.xcf; sourceTree = "<group>"; };
+		DA1447C91E45AE0A00BD282C /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		DA18AC401E3719F50078E009 /* Positivity365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Positivity365.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA18AC431E3719F50078E009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA18AC481E3719F60078E009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +128,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA0E6DF21E455718009E41C2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DA0E6DF31E455718009E41C2 /* Icon-60@2x.png */,
+				DA0E6DF41E455718009E41C2 /* Icon-60@3x.png */,
+				DA0E6DF51E455718009E41C2 /* Icon-76.png */,
+				DA0E6DF61E455718009E41C2 /* Icon-76@2x.png */,
+				DA0E6DF71E455718009E41C2 /* Icon-76@3x.png */,
+				DA0E6DF81E455718009E41C2 /* Icon-83.5@2x.png */,
+				DA0E6DF91E455718009E41C2 /* Icon-Small-40.png */,
+				DA0E6DFA1E455718009E41C2 /* Icon.png */,
+				DA0E6DFB1E455718009E41C2 /* IconBase.xcf */,
+				DA0E6DFC1E455718009E41C2 /* IconBaseCropped.xcf */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		DA18AC371E3719F40078E009 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +168,7 @@
 		DA18AC421E3719F50078E009 /* Positivity365 */ = {
 			isa = PBXGroup;
 			children = (
+				DA0E6DF21E455718009E41C2 /* Images */,
 				DA18AC861E3726280078E009 /* Models */,
 				DA18AC431E3719F50078E009 /* AppDelegate.swift */,
 				DA18AC471E3719F60078E009 /* Main.storyboard */,
@@ -143,6 +183,7 @@
 				DA18AC8D1E3756800078E009 /* PositivityTableViewController.swift */,
 				DA8710BA1E38C1C400B2FCA8 /* MonthsTableViewController.swift */,
 				DAC7C5DC1E3C878C0000F95D /* DaysTableViewController.swift */,
+				DA1447C91E45AE0A00BD282C /* NoteViewController.swift */,
 			);
 			path = Positivity365;
 			sourceTree = "<group>";
@@ -293,8 +334,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA18AC511E3719F60078E009 /* LaunchScreen.storyboard in Resources */,
+				DA0E6DFE1E455718009E41C2 /* Icon-60@3x.png in Resources */,
+				DA0E6E031E455718009E41C2 /* Icon-Small-40.png in Resources */,
+				DA0E6E021E455718009E41C2 /* Icon-83.5@2x.png in Resources */,
 				DA18AC4E1E3719F60078E009 /* Assets.xcassets in Resources */,
 				DA18AC491E3719F60078E009 /* Main.storyboard in Resources */,
+				DA0E6E001E455718009E41C2 /* Icon-76@2x.png in Resources */,
+				DA0E6E061E455718009E41C2 /* IconBaseCropped.xcf in Resources */,
+				DA0E6DFD1E455718009E41C2 /* Icon-60@2x.png in Resources */,
+				DA0E6E041E455718009E41C2 /* Icon.png in Resources */,
+				DA0E6DFF1E455718009E41C2 /* Icon-76.png in Resources */,
+				DA0E6E011E455718009E41C2 /* Icon-76@3x.png in Resources */,
+				DA0E6E051E455718009E41C2 /* IconBase.xcf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +375,7 @@
 				DA18AC441E3719F50078E009 /* AppDelegate.swift in Sources */,
 				DA18AC811E3725CB0078E009 /* Month+CoreDataProperties.swift in Sources */,
 				DA18AC851E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift in Sources */,
+				DA1447CA1E45AE0A00BD282C /* NoteViewController.swift in Sources */,
 				DA18AC881E3727110078E009 /* InitialiseData.swift in Sources */,
 				DA18AC7F1E3725CB0078E009 /* Year+CoreDataProperties.swift in Sources */,
 				DA18AC8C1E3756430078E009 /* PositivityNavigationViewController.swift in Sources */,

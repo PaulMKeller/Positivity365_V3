@@ -13,6 +13,8 @@ class DaysTableViewController: UITableViewController {
 
     var days = [Day]()
     var currentMaxDay:Int16 = 1
+    var currentMonth: String!
+    var currentYear: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +65,19 @@ class DaysTableViewController: UITableViewController {
         cell.textLabel?.text = String(day.day)
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "noteSegue" {
+            let myNote = segue.destination as! NoteViewController
+            let myPath: IndexPath = self.tableView.indexPathForSelectedRow!
+            let selectedDay = days[myPath.row]
+            myNote.currentDay = selectedDay.day
+            myNote.currentMonth = currentMonth
+            myNote.currentYear = currentYear
+            
+            
+        }
     }
 
     /*

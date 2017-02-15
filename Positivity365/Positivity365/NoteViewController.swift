@@ -16,7 +16,7 @@ class NoteViewController: UIViewController, UITextViewDelegate {
     
     @IBAction func saveNote(_ sender: Any) {
         
-        
+        //DataController.saveContext()
     }
     
     var notes = [PositiveNote]()

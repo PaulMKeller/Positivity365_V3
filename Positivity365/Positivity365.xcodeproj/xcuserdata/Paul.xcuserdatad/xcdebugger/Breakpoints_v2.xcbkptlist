@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Positivity365/NoteViewController.swift"
-            timestampString = "507888892.893406"
+            timestampString = "508844842.762897"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "setUpControls()"
-            landmarkType = "7">
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "NoteViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

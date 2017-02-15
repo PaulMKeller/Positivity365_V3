@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NoteViewController: UIViewController {
+class NoteViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet var noteDate: UIDatePicker!
     @IBOutlet var noteText: UITextView!
@@ -33,6 +33,8 @@ class NoteViewController: UIViewController {
         // Set the datepicker values
         // Set the text if it exists
         
+        self.noteText.delegate = self
+        
         setUpControls()
     }
     
@@ -45,7 +47,7 @@ class NoteViewController: UIViewController {
         noteDate.setDate(reqdDateTime!, animated: true)
         
         let fetchRequest:NSFetchRequest<PositiveNote> = PositiveNote.fetchRequest()
-        let dayPredicate = NSPredicate(format: "noteDay = %@", currentDay)
+        let dayPredicate = NSPredicate(format: "noteDay = %@", String(currentDay))
         let monthPredicate = NSPredicate(format: "noteMonth = %@", currentMonth)
         let yearPredicate = NSPredicate(format: "noteYear = %@", currentYear)
         let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [dayPredicate, monthPredicate, yearPredicate])
@@ -74,6 +76,17 @@ class NoteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if (text=="\n")
+        {
+            view.endEditing(true)
+            return false
+        }
+        else
+        {
+            return true
+        }
+    }
 
     /*
     // MARK: - Navigation

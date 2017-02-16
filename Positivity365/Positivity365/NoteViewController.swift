@@ -17,6 +17,25 @@ class NoteViewController: UIViewController, UITextViewDelegate {
     @IBAction func saveNote(_ sender: Any) {
         
         //DataController.saveContext()
+        let context = DataController.getContext()
+        let entity = NSEntityDescription.entity(forEntityName: "PositiveNote", in: context)
+        
+        let myPositiveNote = NSManagedObject(entity: entity!, insertInto: context)
+        
+        myPositiveNote.setValue(noteText.text, forKey: "noteText")
+        myPositiveNote.setValue(String(currentDay), forKey: "noteDay")
+        myPositiveNote.setValue(currentMonth, forKey: "noteMonth")
+        myPositiveNote.setValue(currentYear, forKey: "noteYear")
+        
+        do {
+            try context.save()
+            print("saved!")
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        } catch {
+            
+        }
+        
     }
     
     var notes = [PositiveNote]()
@@ -62,6 +81,7 @@ class NoteViewController: UIViewController, UITextViewDelegate {
                 // set the note text
                 currentNote = notes[0]
                 mNoteText = notes[0].noteText
+                noteText.text = mNoteText
             } else {
                 //This should be a hint text but I can't seem to set that at the moment...
                 mNoteText = "Enter your note here"

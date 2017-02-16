@@ -40,6 +40,7 @@
 		DA18AC8C1E3756430078E009 /* PositivityNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC8B1E3756430078E009 /* PositivityNavigationViewController.swift */; };
 		DA18AC8E1E3756800078E009 /* PositivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA18AC8D1E3756800078E009 /* PositivityTableViewController.swift */; };
 		DA8710BB1E38C1C400B2FCA8 /* MonthsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8710BA1E38C1C400B2FCA8 /* MonthsTableViewController.swift */; };
+		DABBCB6C1E55A93A002097FD /* MyAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBCB6B1E55A93A002097FD /* MyAppConstants.swift */; };
 		DAC7C5DD1E3C878C0000F95D /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC7C5DC1E3C878C0000F95D /* DaysTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		DA18AC8B1E3756430078E009 /* PositivityNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositivityNavigationViewController.swift; sourceTree = "<group>"; };
 		DA18AC8D1E3756800078E009 /* PositivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositivityTableViewController.swift; sourceTree = "<group>"; };
 		DA8710BA1E38C1C400B2FCA8 /* MonthsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthsTableViewController.swift; sourceTree = "<group>"; };
+		DABBCB6B1E55A93A002097FD /* MyAppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppConstants.swift; sourceTree = "<group>"; };
 		DAC7C5DC1E3C878C0000F95D /* DaysTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 				DA8710BA1E38C1C400B2FCA8 /* MonthsTableViewController.swift */,
 				DAC7C5DC1E3C878C0000F95D /* DaysTableViewController.swift */,
 				DA1447C91E45AE0A00BD282C /* NoteViewController.swift */,
+				DABBCB6B1E55A93A002097FD /* MyAppConstants.swift */,
 			);
 			path = Positivity365;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA18AC7E1E3725CB0078E009 /* Year+CoreDataClass.swift in Sources */,
+				DABBCB6C1E55A93A002097FD /* MyAppConstants.swift in Sources */,
 				DA18AC441E3719F50078E009 /* AppDelegate.swift in Sources */,
 				DA18AC811E3725CB0078E009 /* Month+CoreDataProperties.swift in Sources */,
 				DA18AC851E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift in Sources */,

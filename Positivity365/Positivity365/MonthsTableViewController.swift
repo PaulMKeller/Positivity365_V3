@@ -62,7 +62,24 @@ class MonthsTableViewController: UITableViewController {
         let month = months[indexPath.row]
         cell.textLabel?.text = month.monthGroup
         cell.detailTextLabel?.text = String(month.maxDay)
-        //monthCurrentMaxDay = month.maxDay
+        
+        let notesFetchRequest:NSFetchRequest<PositiveNote> = PositiveNote.fetchRequest()
+        let yearPredicate = NSPredicate(format: "noteYear = %@", currentYear)
+        let monthPredicate = NSPredicate(format: "noteMonth = %@", month.monthGroup!)
+        let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [monthPredicate, yearPredicate])
+        notesFetchRequest.predicate = andPredicate
+        
+        do {
+            let notes = try DataController.getContext().fetch(notesFetchRequest)
+            if notes.count > 0 {
+                
+                cell.contentView.backgroundColor = ApplicationConstants.cellColours.activeCellColour
+                cell.backgroundColor = ApplicationConstants.cellColours.activeCellColour
+            }
+        } catch {
+            print("Error: \(error)")
+        }
+
         
         return cell
     }

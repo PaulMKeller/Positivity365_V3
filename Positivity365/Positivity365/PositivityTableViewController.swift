@@ -60,6 +60,21 @@ class PositivityTableViewController: UITableViewController,  NSFetchedResultsCon
         let year = years[indexPath.row]
         cell.textLabel?.text = year.yearGroup
         
+        let notesFetchRequest:NSFetchRequest<PositiveNote> = PositiveNote.fetchRequest()
+        let yearPredicate = NSPredicate(format: "noteYear = %@", year.yearGroup!)
+        notesFetchRequest.predicate = yearPredicate
+        
+        do {
+            let yearNotes = try DataController.getContext().fetch(notesFetchRequest)
+            if yearNotes.count > 0 {
+                
+                cell.contentView.backgroundColor = ApplicationConstants.cellColours.activeCellColour
+                cell.backgroundColor = ApplicationConstants.cellColours.activeCellColour
+            }
+        } catch {
+            print("Error: \(error)")
+        }
+        
         return cell
     }
     

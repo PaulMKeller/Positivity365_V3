@@ -64,6 +64,25 @@ class DaysTableViewController: UITableViewController {
         let day = days[indexPath.row]
         cell.textLabel?.text = String(day.day)
         
+        let notesFetchRequest:NSFetchRequest<PositiveNote> = PositiveNote.fetchRequest()
+        let yearPredicate = NSPredicate(format: "noteYear = %@", currentYear)
+        let monthPredicate = NSPredicate(format: "noteMonth = %@", currentMonth)
+        let dayPredicate = NSPredicate(format: "noteDay = %@", String(day.day))
+        let andPredicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.and, subpredicates: [dayPredicate, monthPredicate, yearPredicate])
+        notesFetchRequest.predicate = andPredicate
+        
+        do {
+            let notes = try DataController.getContext().fetch(notesFetchRequest)
+            if notes.count > 0 {
+                
+                cell.contentView.backgroundColor = ApplicationConstants.cellColours.activeCellColour
+                cell.backgroundColor = ApplicationConstants.cellColours.activeCellColour
+            }
+        } catch {
+            print("Error: \(error)")
+        }
+
+        
         return cell
     }
     

@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NoteViewController: UIViewController, UITextViewDelegate {
+class NoteViewController: UIViewController, UITextViewDelegate, UINavigationControllerDelegate {
 
     @IBOutlet var noteDate: UIDatePicker!
     @IBOutlet var noteText: UITextView!
@@ -17,25 +17,11 @@ class NoteViewController: UIViewController, UITextViewDelegate {
     @IBAction func saveNote(_ sender: Any) {
         
         //DataController.saveContext()
-        let context = DataController.getContext()
-        let entity = NSEntityDescription.entity(forEntityName: "PositiveNote", in: context)
-        
-        let myPositiveNote = NSManagedObject(entity: entity!, insertInto: context)
-        
-        myPositiveNote.setValue(noteText.text, forKey: "noteText")
-        myPositiveNote.setValue(String(currentDay), forKey: "noteDay")
-        myPositiveNote.setValue(currentMonth, forKey: "noteMonth")
-        myPositiveNote.setValue(currentYear, forKey: "noteYear")
-        
-        do {
-            try context.save()
-            print("saved!")
-        } catch let error as NSError {
-            print("Could not save \(error), \(error.userInfo)")
-        } catch {
-            
-        }
-        
+        saveAnyChanges()
+    }
+    
+    @IBAction func dateValueChanged(_ sender: Any) {
+        dateHasChanged = true
     }
     
     var notes = [PositiveNote]()
@@ -44,6 +30,8 @@ class NoteViewController: UIViewController, UITextViewDelegate {
     var currentDay: Int16!
     var mNoteText: String!
     var currentNote: PositiveNote!
+    var dateHasChanged: Bool!
+    var textHasChanged: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +52,8 @@ class NoteViewController: UIViewController, UITextViewDelegate {
         let compiledDate: String = "\(currentYear!)/\(currentMonth!)/\(currentDay!)"
         let reqdDateTime = formatter.date(from: compiledDate)
         noteDate.setDate(reqdDateTime!, animated: true)
+        
+        //noteDate.addTarget(self, action: Selector("datePickerValueChanged:"), for: UIControlEvents.valueChanged)
         
         let fetchRequest:NSFetchRequest<PositiveNote> = PositiveNote.fetchRequest()
         let dayPredicate = NSPredicate(format: "noteDay = %@", String(currentDay))
@@ -107,7 +97,37 @@ class NoteViewController: UIViewController, UITextViewDelegate {
             return true
         }
     }
+    
+    func saveAnyChanges(){
+        let context = DataController.getContext()
+        let entity = NSEntityDescription.entity(forEntityName: "PositiveNote", in: context)
+        
+        let myPositiveNote = NSManagedObject(entity: entity!, insertInto: context)
+        
+        myPositiveNote.setValue(noteText.text, forKey: "noteText")
+        myPositiveNote.setValue(String(currentDay), forKey: "noteDay")
+        myPositiveNote.setValue(currentMonth, forKey: "noteMonth")
+        myPositiveNote.setValue(currentYear, forKey: "noteYear")
+        
+        do {
+            try context.save()
+            dateHasChanged = false
+            textHasChanged = false
+            print("saved!")
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        } catch {
+            
+        }
+    }    
 
+    override func viewWillDisappear(_ animated: Bool) {
+        if dateHasChanged || textHasChanged {
+            saveAnyChanges()
+        }
+    }
+ 
+ 
     /*
     // MARK: - Navigation
 

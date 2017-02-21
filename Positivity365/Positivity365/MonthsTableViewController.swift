@@ -24,6 +24,9 @@ class MonthsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
+        var tbView: UITableView = self.tableView
+        TableViewFunctions.formatTableView(tableView: &tbView)
+        
         let fetchRequest:NSFetchRequest<Month> = Month.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key:"order", ascending: true)]
         
@@ -56,7 +59,7 @@ class MonthsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "monthCell", for: indexPath)
+        var cell = tableView.dequeueReusableCell(withIdentifier: "monthCell", for: indexPath)
 
         // Configure the cell...
         let month = months[indexPath.row]
@@ -72,9 +75,9 @@ class MonthsTableViewController: UITableViewController {
         do {
             let notes = try DataController.getContext().fetch(notesFetchRequest)
             if notes.count > 0 {
-                
-                cell.contentView.backgroundColor = ApplicationConstants.cellColours.activeCellColour
-                cell.backgroundColor = ApplicationConstants.cellColours.activeCellColour
+                TableViewFunctions.formatTableViewCell(cell: &cell, isActive: true)
+            } else {
+                TableViewFunctions.formatTableViewCell(cell: &cell, isActive: false)
             }
         } catch {
             print("Error: \(error)")

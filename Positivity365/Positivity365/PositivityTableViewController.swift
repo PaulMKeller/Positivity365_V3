@@ -22,6 +22,10 @@ class PositivityTableViewController: UITableViewController,  NSFetchedResultsCon
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
+        
+        var tbView: UITableView = self.tableView
+        TableViewFunctions.formatTableView(tableView: &tbView)
+        
         let fetchRequest:NSFetchRequest<Year> = Year.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key:"yearGroup", ascending: true)]
         
@@ -35,7 +39,7 @@ class PositivityTableViewController: UITableViewController,  NSFetchedResultsCon
         }
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,14 +56,13 @@ class PositivityTableViewController: UITableViewController,  NSFetchedResultsCon
         // #warning Incomplete implementation, return the number of rows
         return years.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "YearGroupCell", for: indexPath)
+        var cell = tableView.dequeueReusableCell(withIdentifier: "YearGroupCell", for: indexPath)
 
         let year = years[indexPath.row]
         cell.textLabel?.text = year.yearGroup
-        
+
         let notesFetchRequest:NSFetchRequest<PositiveNote> = PositiveNote.fetchRequest()
         let yearPredicate = NSPredicate(format: "noteYear = %@", year.yearGroup!)
         notesFetchRequest.predicate = yearPredicate
@@ -67,9 +70,11 @@ class PositivityTableViewController: UITableViewController,  NSFetchedResultsCon
         do {
             let yearNotes = try DataController.getContext().fetch(notesFetchRequest)
             if yearNotes.count > 0 {
-                
-                cell.contentView.backgroundColor = ApplicationConstants.cellColours.activeCellColour
-                cell.backgroundColor = ApplicationConstants.cellColours.activeCellColour
+                TableViewFunctions.formatTableViewCell(cell: &cell, isActive: true)
+            }
+            else
+            {
+                TableViewFunctions.formatTableViewCell(cell: &cell, isActive: false)
             }
         } catch {
             print("Error: \(error)")

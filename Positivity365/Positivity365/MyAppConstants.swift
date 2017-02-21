@@ -12,5 +12,6 @@ import UIKit
 class ApplicationConstants {
     struct cellColours {
         static var activeCellColour: UIColor = UIColor.yellow
+        static var clearCellColour: UIColor = UIColor.clear
     }
 }

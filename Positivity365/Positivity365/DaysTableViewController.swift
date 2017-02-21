@@ -25,6 +25,9 @@ class DaysTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
+        var tbView: UITableView = self.tableView
+        TableViewFunctions.formatTableView(tableView: &tbView)
+        
         let fetchRequest:NSFetchRequest<Day> = Day.fetchRequest()
         fetchRequest.fetchLimit = Int(currentMaxDay)
         fetchRequest.sortDescriptors = [NSSortDescriptor(key:"day", ascending: true)]
@@ -58,7 +61,7 @@ class DaysTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "dayCell", for: indexPath)
+        var cell = tableView.dequeueReusableCell(withIdentifier: "dayCell", for: indexPath)
         
         // Configure the cell...
         let day = days[indexPath.row]
@@ -74,9 +77,9 @@ class DaysTableViewController: UITableViewController {
         do {
             let notes = try DataController.getContext().fetch(notesFetchRequest)
             if notes.count > 0 {
-                
-                cell.contentView.backgroundColor = ApplicationConstants.cellColours.activeCellColour
-                cell.backgroundColor = ApplicationConstants.cellColours.activeCellColour
+                TableViewFunctions.formatTableViewCell(cell: &cell, isActive: true)
+            } else {
+                TableViewFunctions.formatTableViewCell(cell: &cell, isActive: false)
             }
         } catch {
             print("Error: \(error)")

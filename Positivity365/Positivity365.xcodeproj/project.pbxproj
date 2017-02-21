@@ -33,6 +33,11 @@
 		DA5960661E5AD27200FBC6BE /* happy-face-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA5960621E5AD27200FBC6BE /* happy-face-2.jpg */; };
 		DA5960671E5AD27200FBC6BE /* happy+faces+yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = DA5960631E5AD27200FBC6BE /* happy+faces+yellow.png */; };
 		DA5960681E5AD27200FBC6BE /* Positive-Thinking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA5960641E5AD27200FBC6BE /* Positive-Thinking.jpg */; };
+		DA78064D1E5BEC340094AF14 /* happy25percentopaque.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7806491E5BEC340094AF14 /* happy25percentopaque.png */; };
+		DA78064E1E5BEC340094AF14 /* happy25percentopaque.xcf in Resources */ = {isa = PBXBuildFile; fileRef = DA78064A1E5BEC340094AF14 /* happy25percentopaque.xcf */; };
+		DA78064F1E5BEC340094AF14 /* happy50percentopaque.png in Resources */ = {isa = PBXBuildFile; fileRef = DA78064B1E5BEC340094AF14 /* happy50percentopaque.png */; };
+		DA7806501E5BEC340094AF14 /* happy50percentopaque.xcf in Resources */ = {isa = PBXBuildFile; fileRef = DA78064C1E5BEC340094AF14 /* happy50percentopaque.xcf */; };
+		DA7806521E5C215F0094AF14 /* TableViewFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7806511E5C215F0094AF14 /* TableViewFunctions.swift */; };
 		DA8710BB1E38C1C400B2FCA8 /* MonthsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8710BA1E38C1C400B2FCA8 /* MonthsTableViewController.swift */; };
 		DABBCB6C1E55A93A002097FD /* MyAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBCB6B1E55A93A002097FD /* MyAppConstants.swift */; };
 		DAC7C5DD1E3C878C0000F95D /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC7C5DC1E3C878C0000F95D /* DaysTableViewController.swift */; };
@@ -103,6 +108,11 @@
 		DA5960621E5AD27200FBC6BE /* happy-face-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "happy-face-2.jpg"; sourceTree = "<group>"; };
 		DA5960631E5AD27200FBC6BE /* happy+faces+yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happy+faces+yellow.png"; sourceTree = "<group>"; };
 		DA5960641E5AD27200FBC6BE /* Positive-Thinking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Positive-Thinking.jpg"; sourceTree = "<group>"; };
+		DA7806491E5BEC340094AF14 /* happy25percentopaque.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy25percentopaque.png; sourceTree = "<group>"; };
+		DA78064A1E5BEC340094AF14 /* happy25percentopaque.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = happy25percentopaque.xcf; sourceTree = "<group>"; };
+		DA78064B1E5BEC340094AF14 /* happy50percentopaque.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy50percentopaque.png; sourceTree = "<group>"; };
+		DA78064C1E5BEC340094AF14 /* happy50percentopaque.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = happy50percentopaque.xcf; sourceTree = "<group>"; };
+		DA7806511E5C215F0094AF14 /* TableViewFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewFunctions.swift; sourceTree = "<group>"; };
 		DA8710BA1E38C1C400B2FCA8 /* MonthsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthsTableViewController.swift; sourceTree = "<group>"; };
 		DABBCB6B1E55A93A002097FD /* MyAppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppConstants.swift; sourceTree = "<group>"; };
 		DAC7C5DC1E3C878C0000F95D /* DaysTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +161,10 @@
 		DA0E6DF21E455718009E41C2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DA7806491E5BEC340094AF14 /* happy25percentopaque.png */,
+				DA78064A1E5BEC340094AF14 /* happy25percentopaque.xcf */,
+				DA78064B1E5BEC340094AF14 /* happy50percentopaque.png */,
+				DA78064C1E5BEC340094AF14 /* happy50percentopaque.xcf */,
 				DAF6FCA91E5B038B00F641B2 /* Icon-20.png */,
 				DAF6FCA71E5B020700F641B2 /* Icon-60.png */,
 				DAF6FC8D1E5B005500F641B2 /* Icon-60@2x.png */,
@@ -214,6 +228,7 @@
 				DAC7C5DC1E3C878C0000F95D /* DaysTableViewController.swift */,
 				DA1447C91E45AE0A00BD282C /* NoteViewController.swift */,
 				DABBCB6B1E55A93A002097FD /* MyAppConstants.swift */,
+				DA7806511E5C215F0094AF14 /* TableViewFunctions.swift */,
 			);
 			path = Positivity365;
 			sourceTree = "<group>";
@@ -364,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA18AC511E3719F60078E009 /* LaunchScreen.storyboard in Resources */,
+				DA78064F1E5BEC340094AF14 /* happy50percentopaque.png in Resources */,
 				DAF6FC9C1E5B005500F641B2 /* Icon-76.png in Resources */,
 				DAF6FC9A1E5B005500F641B2 /* Icon-60@2x.png in Resources */,
 				DAF6FCA41E5B005500F641B2 /* Icon-Small@3x.png in Resources */,
@@ -372,12 +388,15 @@
 				DA18AC4E1E3719F60078E009 /* Assets.xcassets in Resources */,
 				DAF6FCA21E5B005500F641B2 /* Icon-Small-40@3x.png in Resources */,
 				DAF6FC9B1E5B005500F641B2 /* Icon-60@3x.png in Resources */,
+				DA78064D1E5BEC340094AF14 /* happy25percentopaque.png in Resources */,
 				DA5960661E5AD27200FBC6BE /* happy-face-2.jpg in Resources */,
 				DAF6FCA11E5B005500F641B2 /* Icon-Small-40@2x.png in Resources */,
+				DA78064E1E5BEC340094AF14 /* happy25percentopaque.xcf in Resources */,
 				DAF6FC9F1E5B005500F641B2 /* Icon-Small.png in Resources */,
 				DAF6FCA31E5B005500F641B2 /* Icon-Small@2x.png in Resources */,
 				DA18AC491E3719F60078E009 /* Main.storyboard in Resources */,
 				DAF6FCAA1E5B038B00F641B2 /* Icon-20.png in Resources */,
+				DA7806501E5BEC340094AF14 /* happy50percentopaque.xcf in Resources */,
 				DAF6FCA01E5B005500F641B2 /* Icon-Small-40.png in Resources */,
 				DA5960681E5AD27200FBC6BE /* Positive-Thinking.jpg in Resources */,
 				DAF6FC9E1E5B005500F641B2 /* icon-83.5@2x.png in Resources */,
@@ -425,6 +444,7 @@
 				DA8710BB1E38C1C400B2FCA8 /* MonthsTableViewController.swift in Sources */,
 				DA18AC831E3725CB0078E009 /* Day+CoreDataProperties.swift in Sources */,
 				DA18AC841E3725CB0078E009 /* PositiveNote+CoreDataClass.swift in Sources */,
+				DA7806521E5C215F0094AF14 /* TableViewFunctions.swift in Sources */,
 				DA18AC751E371F5C0078E009 /* DataController.swift in Sources */,
 				DAC7C5DD1E3C878C0000F95D /* DaysTableViewController.swift in Sources */,
 				DA18AC801E3725CB0078E009 /* Month+CoreDataClass.swift in Sources */,

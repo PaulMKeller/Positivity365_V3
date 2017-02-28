@@ -17,14 +17,17 @@ class TableViewFunctions{
         if(isActive) {
             //cell.imageView?.image = UIImage(named:"happy+faces+yellow.png")
             cell.backgroundView = UIImageView(image: UIImage(named: "happy+faces+yellow.png")!)
+            cell.selectedBackgroundView = UIImageView(image: UIImage(named: "happy+faces+yellow.png")!)
             cell.textLabel?.textColor = UIColor.white
         } else {
             //cell.imageView?.image = UIImage(named:"happy25percentopaque.png")
             cell.backgroundView = UIImageView(image: UIImage(named: "happy25percentopaque.png")!)
+            cell.selectedBackgroundView = UIImageView(image: UIImage(named: "happy25percentopaque.png")!)
             cell.textLabel?.textColor = UIColor.black
         }
         
         cell.backgroundView?.contentMode = UIViewContentMode.scaleAspectFill
+        cell.selectedBackgroundView?.contentMode = UIViewContentMode.scaleAspectFill
     }
     
     static func formatTableView(tableView: inout UITableView) {

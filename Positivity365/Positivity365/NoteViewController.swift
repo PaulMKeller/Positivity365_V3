@@ -30,8 +30,8 @@ class NoteViewController: UIViewController, UITextViewDelegate, UINavigationCont
     var currentDay: Int16!
     var mNoteText: String!
     var currentNote: PositiveNote!
-    var dateHasChanged: Bool!
-    var textHasChanged: Bool!
+    var dateHasChanged: Bool?
+    var textHasChanged: Bool?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -122,9 +122,12 @@ class NoteViewController: UIViewController, UITextViewDelegate, UINavigationCont
     }    
 
     override func viewWillDisappear(_ animated: Bool) {
-        if dateHasChanged || textHasChanged {
+        /*
+        if let dateHasChanged = dateHasChanged || let textHasChanged = textHasChanged {
             saveAnyChanges()
         }
+        */
+        saveAnyChanges()
     }
  
  

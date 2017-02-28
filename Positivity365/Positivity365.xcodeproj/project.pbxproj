@@ -33,6 +33,8 @@
 		DA5960661E5AD27200FBC6BE /* happy-face-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA5960621E5AD27200FBC6BE /* happy-face-2.jpg */; };
 		DA5960671E5AD27200FBC6BE /* happy+faces+yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = DA5960631E5AD27200FBC6BE /* happy+faces+yellow.png */; };
 		DA5960681E5AD27200FBC6BE /* Positive-Thinking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA5960641E5AD27200FBC6BE /* Positive-Thinking.jpg */; };
+		DA778F561E658413003B82CF /* emoticon-smile-7.png in Resources */ = {isa = PBXBuildFile; fileRef = DA778F551E658413003B82CF /* emoticon-smile-7.png */; };
+		DA778F581E658563003B82CF /* emoticon-smile-7-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = DA778F571E658563003B82CF /* emoticon-smile-7-selected.png */; };
 		DA78064D1E5BEC340094AF14 /* happy25percentopaque.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7806491E5BEC340094AF14 /* happy25percentopaque.png */; };
 		DA78064E1E5BEC340094AF14 /* happy25percentopaque.xcf in Resources */ = {isa = PBXBuildFile; fileRef = DA78064A1E5BEC340094AF14 /* happy25percentopaque.xcf */; };
 		DA78064F1E5BEC340094AF14 /* happy50percentopaque.png in Resources */ = {isa = PBXBuildFile; fileRef = DA78064B1E5BEC340094AF14 /* happy50percentopaque.png */; };
@@ -108,6 +110,8 @@
 		DA5960621E5AD27200FBC6BE /* happy-face-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "happy-face-2.jpg"; sourceTree = "<group>"; };
 		DA5960631E5AD27200FBC6BE /* happy+faces+yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happy+faces+yellow.png"; sourceTree = "<group>"; };
 		DA5960641E5AD27200FBC6BE /* Positive-Thinking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Positive-Thinking.jpg"; sourceTree = "<group>"; };
+		DA778F551E658413003B82CF /* emoticon-smile-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoticon-smile-7.png"; sourceTree = "<group>"; };
+		DA778F571E658563003B82CF /* emoticon-smile-7-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emoticon-smile-7-selected.png"; sourceTree = "<group>"; };
 		DA7806491E5BEC340094AF14 /* happy25percentopaque.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy25percentopaque.png; sourceTree = "<group>"; };
 		DA78064A1E5BEC340094AF14 /* happy25percentopaque.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = happy25percentopaque.xcf; sourceTree = "<group>"; };
 		DA78064B1E5BEC340094AF14 /* happy50percentopaque.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy50percentopaque.png; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 		DA0E6DF21E455718009E41C2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DA778F551E658413003B82CF /* emoticon-smile-7.png */,
+				DA778F571E658563003B82CF /* emoticon-smile-7-selected.png */,
 				DA7806491E5BEC340094AF14 /* happy25percentopaque.png */,
 				DA78064A1E5BEC340094AF14 /* happy25percentopaque.xcf */,
 				DA78064B1E5BEC340094AF14 /* happy50percentopaque.png */,
@@ -383,6 +389,7 @@
 				DAF6FC9C1E5B005500F641B2 /* Icon-76.png in Resources */,
 				DAF6FC9A1E5B005500F641B2 /* Icon-60@2x.png in Resources */,
 				DAF6FCA41E5B005500F641B2 /* Icon-Small@3x.png in Resources */,
+				DA778F561E658413003B82CF /* emoticon-smile-7.png in Resources */,
 				DAF6FC9D1E5B005500F641B2 /* Icon-76@2x.png in Resources */,
 				DAF6FCA81E5B020700F641B2 /* Icon-60.png in Resources */,
 				DA18AC4E1E3719F60078E009 /* Assets.xcassets in Resources */,
@@ -400,6 +407,7 @@
 				DAF6FCA01E5B005500F641B2 /* Icon-Small-40.png in Resources */,
 				DA5960681E5AD27200FBC6BE /* Positive-Thinking.jpg in Resources */,
 				DAF6FC9E1E5B005500F641B2 /* icon-83.5@2x.png in Resources */,
+				DA778F581E658563003B82CF /* emoticon-smile-7-selected.png in Resources */,
 				DA5960651E5AD27200FBC6BE /* happy-face.jpg in Resources */,
 				DAF6FCA61E5B005500F641B2 /* iTunesArtwork@2x.png in Resources */,
 				DAF6FCA51E5B005500F641B2 /* iTunesArtwork.png in Resources */,

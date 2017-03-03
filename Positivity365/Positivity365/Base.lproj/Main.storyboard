@@ -55,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Ty-lD-DVu" id="bGO-eR-TDo">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -75,7 +75,7 @@
         <scene sceneID="4e1-QT-vg2">
             <objects>
                 <navigationController id="OIJ-Nt-UhQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Your Positivity" id="oMk-63-DP5"/>
+                    <tabBarItem key="tabBarItem" title="Your Positivity" image="Contacts-50.png" selectedImage="Contacts Filled-50.png" id="oMk-63-DP5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="44n-2B-G9F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -101,7 +101,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZK1-IB-541" id="jUE-f7-pdc">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -111,7 +111,7 @@
                             <outlet property="delegate" destination="VWA-aO-OJp" id="0ai-lW-oqs"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Settings" id="Kxk-ua-oCX"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings-30.png" selectedImage="Settings Filled-30.png" id="Kxk-ua-oCX"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="VTj-q3-GZV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yQ-99-LG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Positive Thought" id="59i-Y6-g55"/>
+                    <tabBarItem key="tabBarItem" title="Positive Thought" image="Idea-50.png" selectedImage="Idea Filled-50.png" id="59i-Y6-g55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIa-3e-aOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,7 +292,7 @@
         <scene sceneID="wK2-pg-XaL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ouL-11-gpd" customClass="PositivityNavigationViewController" customModule="Positivity365" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Positivity" image="emoticon-smile-7.png" selectedImage="emoticon-smile-7-selected.png" id="RJ1-iY-JyH"/>
+                    <tabBarItem key="tabBarItem" title="Positivity" image="Happy-30.png" selectedImage="Happy Filled-30.png" id="RJ1-iY-JyH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="X3F-sg-Adp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -330,8 +330,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="emoticon-smile-7-selected.png" width="30" height="30"/>
-        <image name="emoticon-smile-7.png" width="30" height="30"/>
+        <image name="Contacts Filled-50.png" width="30" height="30"/>
+        <image name="Contacts-50.png" width="30" height="30"/>
+        <image name="Happy Filled-30.png" width="30" height="30"/>
+        <image name="Happy-30.png" width="30" height="30"/>
+        <image name="Idea Filled-50.png" width="30" height="30"/>
+        <image name="Idea-50.png" width="30" height="30"/>
+        <image name="Settings Filled-30.png" width="30" height="30"/>
+        <image name="Settings-30.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="CPg-Op-23O"/>

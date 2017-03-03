@@ -17,6 +17,10 @@
         <relationship name="month" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Month" syncable="YES"/>
         <relationship name="year" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Year" syncable="YES"/>
     </entity>
+    <entity name="PositiveThought" representedClassName="PositiveThought" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thoughtText" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Year" representedClassName="Year" syncable="YES">
         <attribute name="leapYear" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="yearGroup" optional="YES" attributeType="String" syncable="YES"/>
@@ -25,6 +29,7 @@
         <element name="Day" positionX="-171" positionY="-258" width="128" height="58"/>
         <element name="Month" positionX="-65" positionY="-120" width="128" height="88"/>
         <element name="PositiveNote" positionX="-351" positionY="-207" width="128" height="148"/>
-        <element name="Year" positionX="-144" positionY="-9" width="128" height="73"/>
+        <element name="Year" positionX="-74" positionY="125" width="128" height="73"/>
+        <element name="PositiveThought" positionX="-344" positionY="-0" width="128" height="73"/>
     </elements>
 </model>

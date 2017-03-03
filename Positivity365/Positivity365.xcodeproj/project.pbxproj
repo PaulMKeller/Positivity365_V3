@@ -37,6 +37,8 @@
 		DA3B2DF61E69542F002ADB8F /* Settings-30.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3B2DF41E69542F002ADB8F /* Settings-30.png */; };
 		DA3B2DF91E6955A6002ADB8F /* Happy Filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3B2DF71E6955A6002ADB8F /* Happy Filled-30.png */; };
 		DA3B2DFA1E6955A6002ADB8F /* Happy-30.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3B2DF81E6955A6002ADB8F /* Happy-30.png */; };
+		DA3B2DFD1E695A38002ADB8F /* PositiveThought+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B2DFB1E695A38002ADB8F /* PositiveThought+CoreDataClass.swift */; };
+		DA3B2DFE1E695A38002ADB8F /* PositiveThought+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B2DFC1E695A38002ADB8F /* PositiveThought+CoreDataProperties.swift */; };
 		DA5960651E5AD27200FBC6BE /* happy-face.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA5960611E5AD27200FBC6BE /* happy-face.jpg */; };
 		DA5960661E5AD27200FBC6BE /* happy-face-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA5960621E5AD27200FBC6BE /* happy-face-2.jpg */; };
 		DA5960671E5AD27200FBC6BE /* happy+faces+yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = DA5960631E5AD27200FBC6BE /* happy+faces+yellow.png */; };
@@ -122,6 +124,8 @@
 		DA3B2DF41E69542F002ADB8F /* Settings-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-30.png"; sourceTree = "<group>"; };
 		DA3B2DF71E6955A6002ADB8F /* Happy Filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Happy Filled-30.png"; sourceTree = "<group>"; };
 		DA3B2DF81E6955A6002ADB8F /* Happy-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Happy-30.png"; sourceTree = "<group>"; };
+		DA3B2DFB1E695A38002ADB8F /* PositiveThought+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PositiveThought+CoreDataClass.swift"; path = "Positivity365/PositiveThought+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DA3B2DFC1E695A38002ADB8F /* PositiveThought+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PositiveThought+CoreDataProperties.swift"; path = "Positivity365/PositiveThought+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DA5960611E5AD27200FBC6BE /* happy-face.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "happy-face.jpg"; sourceTree = "<group>"; };
 		DA5960621E5AD27200FBC6BE /* happy-face-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "happy-face-2.jpg"; sourceTree = "<group>"; };
 		DA5960631E5AD27200FBC6BE /* happy+faces+yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "happy+faces+yellow.png"; sourceTree = "<group>"; };
@@ -285,6 +289,8 @@
 		DA18AC861E3726280078E009 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DA3B2DFB1E695A38002ADB8F /* PositiveThought+CoreDataClass.swift */,
+				DA3B2DFC1E695A38002ADB8F /* PositiveThought+CoreDataProperties.swift */,
 				DA18AC761E3725CB0078E009 /* Year+CoreDataClass.swift */,
 				DA18AC771E3725CB0078E009 /* Year+CoreDataProperties.swift */,
 				DA18AC781E3725CB0078E009 /* Month+CoreDataClass.swift */,
@@ -475,6 +481,7 @@
 				DA18AC811E3725CB0078E009 /* Month+CoreDataProperties.swift in Sources */,
 				DA18AC851E3725CB0078E009 /* PositiveNote+CoreDataProperties.swift in Sources */,
 				DA1447CA1E45AE0A00BD282C /* NoteViewController.swift in Sources */,
+				DA3B2DFD1E695A38002ADB8F /* PositiveThought+CoreDataClass.swift in Sources */,
 				DA18AC881E3727110078E009 /* InitialiseData.swift in Sources */,
 				DA18AC7F1E3725CB0078E009 /* Year+CoreDataProperties.swift in Sources */,
 				DA18AC8C1E3756430078E009 /* PositivityNavigationViewController.swift in Sources */,
@@ -484,6 +491,7 @@
 				DA8710BB1E38C1C400B2FCA8 /* MonthsTableViewController.swift in Sources */,
 				DA18AC831E3725CB0078E009 /* Day+CoreDataProperties.swift in Sources */,
 				DA18AC841E3725CB0078E009 /* PositiveNote+CoreDataClass.swift in Sources */,
+				DA3B2DFE1E695A38002ADB8F /* PositiveThought+CoreDataProperties.swift in Sources */,
 				DA7806521E5C215F0094AF14 /* TableViewFunctions.swift in Sources */,
 				DA18AC751E371F5C0078E009 /* DataController.swift in Sources */,
 				DAC7C5DD1E3C878C0000F95D /* DaysTableViewController.swift in Sources */,

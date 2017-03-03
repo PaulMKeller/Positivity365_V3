@@ -15,7 +15,11 @@ class InitialiseData{
     }
     
     class func checkForData() {
-        if checkYears() == false {
+        
+        let hasYearsData:Bool = checkYears()
+        let hasPositiveThoughts:Bool = checkPositiveThoughts()
+        
+        if hasYearsData == false {
             createYears(newYearGroup: "2017", newLeapYear: false)
             createYears(newYearGroup: "2018", newLeapYear: false)
             createYears(newYearGroup: "2019", newLeapYear: false)
@@ -37,7 +41,15 @@ class InitialiseData{
             for i: Int16 in 1...31 {
                 createDays(newDay: i)
             }
-            
+        }
+        
+        if hasPositiveThoughts == false {
+            createPositiveThought(newThoughtText: "Do some good stuff", newThoughtAuthor: "Paul Martin Keller")
+            createPositiveThought(newThoughtText: "Don't worry, be happy", newThoughtAuthor: "Bobby McFerrin")
+            createPositiveThought(newThoughtText: "Always look on the bright side of life", newThoughtAuthor: "Eric Idle")
+        }
+        
+        if hasPositiveThoughts == false || hasYearsData == false {
             DataController.saveContext()
         }
     }
@@ -81,5 +93,32 @@ class InitialiseData{
         
         let day:Day = NSEntityDescription.insertNewObject(forEntityName: dayClassName, into: DataController.getContext()) as! Day
         day.day = newDay
+    }
+    
+    private class func checkPositiveThoughts() -> Bool {
+        
+        let fetchRequest:NSFetchRequest<PositiveThought> = PositiveThought.fetchRequest()
+        
+        do {
+            let searchResults = try DataController.getContext().fetch(fetchRequest)
+            
+            if searchResults.count <= 0 {
+                return false
+            } else {
+                return true
+            }
+        } catch {
+            print("Error: \(error)")
+            return false
+        }
+
+    }
+    
+    private class func createPositiveThought(newThoughtText: String, newThoughtAuthor: String)
+    {
+        let thoughtClassName:String! = String(describing: PositiveThought.self)
+        let thought:PositiveThought = NSEntityDescription.insertNewObject(forEntityName: thoughtClassName, into: DataController.getContext()) as! PositiveThought
+        thought.thoughtText = newThoughtText
+        thought.author = newThoughtAuthor
     }
 }

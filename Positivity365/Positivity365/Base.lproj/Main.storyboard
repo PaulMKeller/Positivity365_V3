@@ -161,7 +161,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Positive Thought" image="Idea-50.png" selectedImage="Idea Filled-50.png" id="59i-Y6-g55"/>
                     <connections>
-                        <outlet property="thoughWebView" destination="c6L-U6-wpv" id="k4s-Hi-msa"/>
+                        <outlet property="thoughtWebView" destination="c6L-U6-wpv" id="st5-Bk-GHj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIa-3e-aOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -181,11 +181,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TfD-9d-s3z" id="Bbb-o2-1Zr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FtS-Go-Uws">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>

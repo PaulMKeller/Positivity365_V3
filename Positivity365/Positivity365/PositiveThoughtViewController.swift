@@ -10,13 +10,17 @@ import UIKit
 
 class PositiveThoughtViewController: UIViewController {
 
-    @IBOutlet weak var thoughWebView: UIWebView!
+    @IBOutlet weak var thoughtWebView: UIWebView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         setCurrentThought()
     }
 
@@ -32,6 +36,15 @@ class PositiveThoughtViewController: UIViewController {
         //Set one at random
         //Check expiry for the day to see if the note needs to change
         //Remove any webrowser bits that aren't required. I just need to see the rendered content, no navigation, no history, nothing else. Just the rendered content.
+        
+        /*
+        var htmlTextValue:String
+        htmlTextValue = "<HTML><HEAD></HEAD><BODY>"
+        htmlTextValue += "Some really positive stuff will go here - Bobby McPositive"
+        htmlTextValue += "</BODY></HTML>"
+        */
+        
+        thoughtWebView.loadHTMLString(HTMLFunctions.createPositiveThought(), baseURL: nil)
     }
     
 

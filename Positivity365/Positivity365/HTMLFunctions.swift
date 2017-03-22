@@ -47,7 +47,14 @@ class HTMLFunctions {
         myCSS += "}"
         
         myCSS += ".quote {"
-        myCSS += "   float: center;"
+        myCSS += "   position: absolute;"
+        myCSS += "   z-index: 15;"
+        myCSS += "   height: auto;"
+        myCSS += "   width: auto;"
+        myCSS += "   top: 50%;"
+        myCSS += "   left: 50%;"
+        myCSS += "   margin: 0 0 0 0;"
+        myCSS += "   text-align: center;"
         myCSS += "}"
         
         

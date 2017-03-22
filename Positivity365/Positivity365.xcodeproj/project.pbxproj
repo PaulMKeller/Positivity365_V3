@@ -70,7 +70,6 @@
 		DAF6FCA81E5B020700F641B2 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6FCA71E5B020700F641B2 /* Icon-60.png */; };
 		DAF6FCAA1E5B038B00F641B2 /* Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF6FCA91E5B038B00F641B2 /* Icon-20.png */; };
 		DAFF0C3F1E6EBF39000F839A /* HTMLFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFF0C3E1E6EBF38000F839A /* HTMLFunctions.swift */; };
-		DAFF0C411E6EC065000F839A /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = DAFF0C401E6EC065000F839A /* main.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,7 +159,6 @@
 		DAF6FCA71E5B020700F641B2 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
 		DAF6FCA91E5B038B00F641B2 /* Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-20.png"; sourceTree = "<group>"; };
 		DAFF0C3E1E6EBF38000F839A /* HTMLFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLFunctions.swift; sourceTree = "<group>"; };
-		DAFF0C401E6EC065000F839A /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,7 +268,6 @@
 				DABBCB6B1E55A93A002097FD /* MyAppConstants.swift */,
 				DA7806511E5C215F0094AF14 /* TableViewFunctions.swift */,
 				DAD58FEC1E6D713D00E83428 /* PositiveThoughtViewController.swift */,
-				DAFF0C401E6EC065000F839A /* main.css */,
 				DAFF0C3E1E6EBF38000F839A /* HTMLFunctions.swift */,
 			);
 			path = Positivity365;
@@ -428,7 +425,6 @@
 				DA78064F1E5BEC340094AF14 /* happy50percentopaque.png in Resources */,
 				DA3B2DF21E69537F002ADB8F /* Idea-50.png in Resources */,
 				DAF6FC9C1E5B005500F641B2 /* Icon-76.png in Resources */,
-				DAFF0C411E6EC065000F839A /* main.css in Resources */,
 				DA3B2DF11E69537F002ADB8F /* Idea Filled-50.png in Resources */,
 				DAF6FC9A1E5B005500F641B2 /* Icon-60@2x.png in Resources */,
 				DA3B2DED1E69516F002ADB8F /* Contacts Filled-50.png in Resources */,
